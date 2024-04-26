@@ -14,4 +14,4 @@ https://drive.google.com/drive/folders/1L84hdJCYviUpZ2RNl6FunQgr8A9XLvnB?usp=sha
 
 
 
-Please Read requirements.txt file before trying to install libraries.
+Please Read requirements.txt file before trying to install libraries. I have very much simplified the process of implementing it so that you don't have to waste your time trying to fix errors.
