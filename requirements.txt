@@ -9,7 +9,7 @@ These are the updated 2024 methods of installing the following libraries onto yo
                       -  File > New Projects Setup > Settings for New Projects
                       - Select Python interpreter
                       - Use the dropdown and select your interpreter ( Example : Python 3.11 ( Face-Recognition-System-main))
-                      -Use the + icon below it and search for dlib-binary (Note : Selecting regular dlib might throw errors and may not install properly . It is just a waste of time if you try to figgure it out. dlib-binary does the job) 
+                      -Use the + icon below it and search for dlib-binary (Note : Selecting regular dlib might throw errors and may not install properly . It is just a waste of time if you try to figure it out. dlib-binary does the job) 
                       -Select dlib-binary and install package.
         Follow the above steps for downloading all other libraries if you are using PyCharm in Windows / Mac
 
