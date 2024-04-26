@@ -1,6 +1,81 @@
-dlib==19.17.0
-numpy==1.22.0
-scikit-image==0.18.3
-pandas==1.3.4
-opencv-python==4.5.4.58
-flask
+These are the updated 2024 methods of installing the following libraries onto your raspberry pi. Note that this project can be easily implemented in "Pycharm" without much hassle.
+>> The only issue with Raspberry Pi is that in most cases ,  you use standard commands which builds your libraries from source that either takes a lot of time(about 2 hours) or is stuck at a certain point. For example , even now when you use 
+   pip install opencv-python , it tends to get stuck at "Building wheels 517 | " and throws up errors after a few hours of patiently waiting.
+
+>> So, without further wasting time , here are the shortcuts that might help you save your precious time and efforts while downloading libraries:
+
+1) dlib: 
+       i) If you are using  PyCharm ,  use dlib-binary in the available package-installer ( Package installer can be found in )
+                      -  File > New Projects Setup > Settings for New Projects
+                      - Select Python interpreter
+                      - Use the dropdown and select your interpreter ( Example : Python 3.11 ( Face-Recognition-System-main))
+                      -Use the + icon below it and search for dlib-binary (Note : Selecting regular dlib might throw errors and may not install properly . It is just a waste of time if you try to figgure it out. dlib-binary does the job) 
+                      -Select dlib-binary and install package.
+        Follow the above steps for downloading all other libraries if you are using PyCharm in Windows / Mac
+
+        ii) For Raspberry Pi Users:
+                      -  Go to terminal(Located on top naviagtion bar)
+                      -Type the following commands one after the other.
+                              sudo apt update
+                              sudo apt install build-essential cmake libopenblas-dev liblapack-dev libjpeg-dev libx11-dev libgtk-3-dev
+                              git clone https://github.com/davisking/dlib.git
+                              cd dlib
+                              sudo python3 setup.py install  ( After this step has been completed , close the terminal and open once again)
+
+
+2) numpy:
+   i)For numpy , there is no issue in Pycharm . Install the regular numpy(Any version) for your requirements using Package Installer
+
+   ii)For Raspberry Pi Users:  sudo apt-get install python3-numpy
+
+
+3) pandas
+    i)For pandas too , there is no issue in Pycharm . Install the regular pandas(Any version) for your requirements using Package Installer
+
+    ii)For Raspberry Pi Users: 
+                    Pandas is installed by default . To confirm it , type the following commands in the terminal
+                                    import pandas as pd
+                                    print(pd.__version__)
+                     If there is some sort of error like ( command not found , version not valid etc) use the following command to install pandas :    sudo pip3 install pandas
+
+4)scikit-image
+      i)For scikit-image too , there is no issue in Pycharm . Install the regular scikit-image(Any version) for your requirements using Package Installer
+
+       ii)For Raspberry Pi Users:
+                    Scikit-image is also cumbersome while installing from scratch (source) .So use the following alternative that gets the job done:   sudo apt-get install python3-skimage
+
+
+5)flask
+       i)For flask , there is no issue in Pycharm . Install the regular flask(Any version) for your requirements using Package Installer
+
+       ii)For Raspberry Pi Users: sudo pip3 install flask
+
+
+6)opencv
+       i)opencv generally doesn't throw errors in Pycharm. So, just download the regular package using pacakge installer.
+
+       ii) For Raspberry Pi Users:
+                  git clone https://github.com/opencv/opencv.git
+                  cd opencv
+                  mkdir build
+                  cd build
+                  cmake -DCMAKE_INSTALL_PREFIX=/usr/local ..
+                  sudo make install   (Close and reopen the terminal after this step)
+
+So, that's it. Now you have successfully installed all the required libraries for your python program.Feel free to contact me on Telegram: https://t.me/Ggproboi or email me here: kv10291029@gmail.com for any queries.
+
+
+                  
+
+
+  
+                   
+
+        
+                              
+                      
+          
+
+
+
+
